@@ -59,7 +59,7 @@ main > article, nav{
 }
 
 nav {
-  display: flex;
+ display: flex;
 }
 
 nav > a:not(:first-of-type){
@@ -130,4 +130,27 @@ footer {
   text-transform: uppercase;
   padding: 24px 0;
   color: var(--off-white);
+}
+
+@media screen and (max-width: 500px) {
+  header > nav {
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+  }
+  section.hero > .call-to-action {
+    font-size: 1.5rem;
+  }
+  main article {
+    padding: 30px;
+  }
+  main > article img {
+    float: none;
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+  main > section, main > article {
+    margin-bottom: 10px;
+  }
 }
